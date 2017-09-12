@@ -1,0 +1,99 @@
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insta_gradient" >
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    app:layout_marginTopPercent="10%"
+    app:layout_heightPercent="10%"
+    app:layout_widthPercent="50%"
+    app:srcCompat="@drawable/ic_instagram"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:hint="@string/username"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/imageView"
+        app:layout_marginTopPercent="5%"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="80%"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white20percent"
+        android:inputType="textNoSuggestions"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:hint="@string/password"
+        android:textColorHint="@color/white"
+        app:layout_marginTopPercent="2.5%"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="80%"
+        android:background="@color/white20percent"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_below="@+id/password"
+        app:layout_marginTopPercent="2.5%"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="80%"
+        android:background="@drawable/shape_view_border"
+        android:layout_centerHorizontal="true"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/helpSigningIn"
+        android:layout_below="@+id/buttonLogin"
+        android:text="@string/help_signing_in"
+        android:textColor="@color/white"
+        app:layout_marginTopPercent="2.5%"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/or"
+        android:layout_below="@+id/helpSigningIn"
+        android:text="@string/or"
+        android:textColor="@color/white"
+        app:layout_marginTopPercent="2.5%"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/facebookLogIn"
+        android:layout_below="@+id/or"
+        android:text="@string/facebook_log_in"
+        android:textColor="@color/white"
+        app:layout_marginTopPercent="2.5%"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/signUp"
+        android:layout_below="@+id/facebookLogIn"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        app:layout_marginTopPercent="2.5%"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+
+</android.support.percent.PercentRelativeLayout>
+
