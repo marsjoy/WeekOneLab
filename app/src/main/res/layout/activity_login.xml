@@ -53,6 +53,7 @@
         app:layout_marginTopPercent="2.5%"
         app:layout_heightPercent="8.5%"
         app:layout_widthPercent="80%"
+        android:onClick="onLogin"
         android:background="@drawable/shape_view_border"
         android:layout_centerHorizontal="true"
         android:text="@string/log_in"

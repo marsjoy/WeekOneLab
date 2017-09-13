@@ -5,5 +5,9 @@ CodePath Week One Lab
 ![Imgur Image](https://i.imgur.com/VJwQ82Y.png)
 Instagram Login (left) and Instagram Login Mockup (right)
 
+![Imgur Image](https://i.imgur.com/8llDn13.gif)
+Instagram Login Mockup Interaction (with toast)
+
 To Do
 * Use CustomTypefaceSpan (See: https://stackoverflow.com/questions/10675070/multiple-typeface-in-single-textview)
+* Add Stream Screen 
