@@ -5,7 +5,7 @@ CodePath Week One Lab
 ![Imgur Image](https://i.imgur.com/VJwQ82Y.png)
 Instagram Login (left) and Instagram Login Mockup (right)
 
-![Imgur Image](https://i.imgur.com/8llDn13.gif)
+![Imgur Image](https://i.imgur.com/8llDn13.gif)<br>
 Instagram Login Mockup Interaction (with toast)
 
 To Do
