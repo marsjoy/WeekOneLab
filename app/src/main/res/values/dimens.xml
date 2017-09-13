@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="defaultTextSize">16dp</dimen>
-    <dimen name="subtitleTextSize">14dp</dimen>
-    <dimen name="subtitleSpaceSize">2dp</dimen>
+    <dimen name="defaultTextSize">16sp</dimen>
+    <dimen name="subtitleTextSize">14sp</dimen>
+    <dimen name="subtitleSpaceSize">2sp</dimen>
+    <dimen name="defaultPadding">10sp</dimen>
 </resources>

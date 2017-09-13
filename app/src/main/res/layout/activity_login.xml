@@ -7,9 +7,10 @@
 
 <ImageView
     android:id="@+id/imageView"
+    android:contentDescription="@string/border"
     android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true"
-    app:layout_marginTopPercent="20%"
+    app:layout_marginTopPercent="17%"
     app:layout_heightPercent="8%"
     app:layout_widthPercent="50%"
     app:srcCompat="@drawable/ic_instagram"/>
@@ -17,12 +18,12 @@
     <EditText
         android:id="@+id/username"
         android:hint="@string/username"
-        android:textColorHint="@color/white80percent"
-        android:textSize="@dimen/defaultTextSize"
-        android:paddingLeft="10dp"
+        android:textColorHint="@color/white90percent"
+        android:paddingStart="@dimen/defaultPadding"
+        android:paddingEnd="@dimen/defaultPadding"
         android:layout_below="@+id/imageView"
         app:layout_marginTopPercent="5%"
-        app:layout_heightPercent="8%"
+        app:layout_heightPercent="8.5%"
         app:layout_widthPercent="80%"
         android:layout_centerHorizontal="true"
         android:background="@color/white20percent"
@@ -32,11 +33,12 @@
         android:id="@+id/password"
         android:layout_below="@+id/username"
         android:hint="@string/password"
-        android:textColorHint="@color/white80percent"
+        android:textColorHint="@color/white90percent"
         android:textSize="@dimen/defaultTextSize"
-        android:paddingLeft="10dp"
+        android:paddingStart="@dimen/defaultPadding"
+        android:paddingEnd="@dimen/defaultPadding"
         app:layout_marginTopPercent="2.5%"
-        app:layout_heightPercent="8%"
+        app:layout_heightPercent="8.5%"
         app:layout_widthPercent="80%"
         android:background="@color/white20percent"
         android:layout_centerHorizontal="true"
@@ -46,14 +48,15 @@
         android:id="@+id/buttonLogin"
         android:layout_below="@+id/password"
         android:textAllCaps="false"
+        android:textStyle="bold"
         android:textSize="@dimen/defaultTextSize"
         app:layout_marginTopPercent="2.5%"
-        app:layout_heightPercent="8%"
+        app:layout_heightPercent="8.5%"
         app:layout_widthPercent="80%"
         android:background="@drawable/shape_view_border"
         android:layout_centerHorizontal="true"
         android:text="@string/log_in"
-        android:textColor="@color/white80percent"
+        android:textColor="@color/white50percent"
         android:gravity="center" />
 
     <LinearLayout
@@ -70,21 +73,19 @@
 
     <TextView
         android:id="@+id/forgotLoginDetails"
-        android:layout_below="@+id/buttonLogin"
         android:text="@string/forgot_login_details"
         android:textColor="@color/white80percent"
         android:textSize="@dimen/subtitleTextSize"
-        android:layout_toLeftOf="@+id/helpSigningIn"
         app:layout_marginTopPercent="2.5%"
-        android:layout_marginRight="@dimen/subtitleSpaceSize"
+        android:layout_marginEnd="@dimen/subtitleSpaceSize"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content" />
 
     <TextView
         android:id="@+id/helpSigningIn"
-        android:layout_below="@+id/buttonLogin"
         android:text="@string/help_signing_in"
-        android:textColor="@color/white80percent"
+        android:textStyle="bold"
+        android:textColor="@color/white90percent"
         android:textSize="@dimen/subtitleTextSize"
         app:layout_marginTopPercent="2.5%"
         android:layout_height="wrap_content"
@@ -95,23 +96,25 @@
     <TextView
         android:id="@+id/or"
         android:layout_below="@+id/helpLayout"
+        android:textStyle="bold"
         android:text="@string/or"
-        android:textColor="@color/white80percent"
+        android:textColor="@color/white90percent"
         android:textSize="@dimen/defaultTextSize"
         app:layout_marginTopPercent="2.5%"
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_widthPercent="80%"
-        android:drawableLeft="@drawable/shape_view_line"
-        android:drawableRight="@drawable/shape_view_line"
+        android:drawableStart="@drawable/shape_view_line"
+        android:drawableEnd="@drawable/shape_view_line"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:drawablePadding="10dp" />
+        android:drawablePadding="@dimen/defaultPadding" />
 
     <TextView
         android:id="@+id/facebookLogIn"
         android:layout_below="@+id/or"
         android:text="@string/facebook_log_in"
+        android:textStyle="bold"
         android:textColor="@android:color/white"
         android:textSize="@dimen/defaultTextSize"
         app:layout_marginTopPercent="2.5%"
@@ -119,14 +122,15 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:drawableLeft="@drawable/ic_facebook"
-        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_facebook"
+        android:drawablePadding="@dimen/defaultPadding"
         android:gravity="center_vertical"/>
 
     <ImageView
         android:id="@+id/signUpBoundary"
+        android:contentDescription="@string/line"
         android:layout_below="@+id/facebookLogIn"
-        app:layout_marginTopPercent="12.5%"
+        app:layout_marginTopPercent="14%"
         app:layout_widthPercent="100%"
         android:padding="@null"
         android:layout_height="wrap_content"
@@ -152,18 +156,16 @@
             android:textSize="@dimen/subtitleTextSize"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/subtitleSpaceSize"
-            android:layout_toLeftOf="@+id/signUp"
-            android:layout_below="@+id/signUpBoundary" />
+            android:layout_marginEnd="@dimen/subtitleSpaceSize" />
 
         <TextView
             android:id="@+id/signUp"
+            android:textStyle="bold"
             android:text="@string/sign_up"
-            android:textColor="@color/white80percent"
+            android:textColor="@color/white90percent"
             android:textSize="@dimen/subtitleTextSize"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/signUpBoundary" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
