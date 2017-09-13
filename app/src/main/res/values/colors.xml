@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white20percent">#20FFFFFF</color>
-    <color name="white">#FFFFFF</color>
+    <color name="white80percent">#80FFFFFF</color>
     <color name="gradient_end">#D53592</color>
     <color name="gradient_start">#903ACD</color>
     <color name="gradient_center">#F4306D</color>
